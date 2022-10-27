@@ -1,0 +1,59 @@
+{
+  
+  "products": [
+    {
+      "id": 1,
+      "productName": "Bag",
+      "productPrice": "100",
+      "discount": 5,
+      "sale": "true",
+      "bestSeller": "true",
+      "proImg": ""
+    },
+    {
+      "id": 2,
+      "productName": "Watch",
+      "productPrice": "1000",
+      "discount": 15,
+      "sale": "true",
+      "bestSeller": "true",
+      "proImg": ""
+    },
+    {
+      "id": 3,
+      "productName": "Shirt",
+      "productPrice": "500",
+      "discount": 25,
+      "sale": "false",
+      "bestSeller": "true",
+      "proImg": ""
+    },
+    {
+      "id": 4,
+      "productName": "Shoes",
+      "productPrice": "2000",
+      "discount": 10,
+      "sale": "true",
+      "bestSeller": "true",
+      "proImg": ""
+    },
+    {
+      "id": 5,
+      "productName": "Glasses",
+      "productPrice": "300",
+      "discount": 12,
+      "sale": "false",
+      "bestSeller": "true",
+      "proImg": ""
+    },
+    {
+      "id": 6,
+      "productName": "Mobile",
+      "productPrice": "12000",
+      "discount": 20,
+      "sale": "false",
+      "bestSeller": "true",
+      "proImg": ""
+    }
+  ]
+}

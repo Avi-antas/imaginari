@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    padding: 0 15px;
+    margin-bottom: 50px;
+    .logo{
+        -webkit-text-stroke: 1px;
+    }
+    .navbar{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .my-nav{
+        margin-right: 10px;
+    }
+}
+.action-btn{
+    width: 100%;
+    &:nth-child(1){
+        margin-bottom: 5px;
+    }
+}
+.each-pro{
+    margin-bottom: 15px;
+}
