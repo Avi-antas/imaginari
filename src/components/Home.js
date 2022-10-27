@@ -6,6 +6,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Header from "./Header";
 import { addToCart } from "../actions/action";
 import { removeToCart } from "../actions/action";
+import Banner from "./Banner";
 function Home() {
   const dispatch = useDispatch();
   const counter = useSelector((state) => state.counterReducer);
@@ -20,8 +21,12 @@ function Home() {
  
   return (
     <>
+      
       <Header />
-
+      <Container>
+      <Banner />
+      </Container>
+    
       <Container>
         <Row>
           <Col md={12}>

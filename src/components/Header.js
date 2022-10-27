@@ -1,8 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux'
 import React from 'react'
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 
 import { Link, NavLink } from 'react-router-dom'
 import './App.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Header(props) {
     const updatecart = useSelector((state) => state.counterReducer)
   return (
@@ -17,7 +19,7 @@ function Header(props) {
             </div>
             <div className='nav-right'>
                 <div className='cart'>
-                    <p>MyCart:{updatecart}</p>
+                    <p><FontAwesomeIcon icon={faShoppingBag}/>MyCart:{updatecart}</p>
                 </div>
             </div>
         </div>
