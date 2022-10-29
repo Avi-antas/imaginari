@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux'
 import React from 'react'
-import { faShoppingBag, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingBag, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 
 import { Link, NavLink } from 'react-router-dom'
 import './App.scss'
@@ -25,7 +25,7 @@ function Header(props) {
                         <FontAwesomeIcon icon={faSearch} className="sar-icon" />
                         Search
                         </button>
-                        
+                        <p  className='login'> <FontAwesomeIcon icon={faUser} className="sar-icon" style={{martginRight:5}}/>Login</p>
                     </div>
                 </div>
                 <div className='nav-right'>

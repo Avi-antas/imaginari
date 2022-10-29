@@ -52,7 +52,7 @@
         .search{
             display: flex;
             position: relative;
-            width: 310px;
+            width: 400px;
             align-items: center;
             button{
                 padding: 6px 11px;
@@ -72,6 +72,12 @@
 
             }
         }
+    }
+    .login{
+        padding: 10px !important;
+        margin-left: 10px !important;
+        color: #fff;
+        border-left: 1px solid rgba(255, 255, 255, 0.589);
     }
 }
 
