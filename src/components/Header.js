@@ -19,7 +19,7 @@ function Header(props) {
             </div>
             <div className='nav-right'>
                 <div className='cart'>
-                    <p><FontAwesomeIcon icon={faShoppingBag}/>MyCart:{updatecart}</p>
+                    <p style={{color:'#ff0052', fontWeight:500}}><FontAwesomeIcon icon={faShoppingBag} className="site-icon"/>MyCart:{updatecart}</p>
                 </div>
             </div>
         </div>

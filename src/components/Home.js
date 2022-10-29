@@ -32,7 +32,12 @@ function Home() {
           <Col md={12}>
             <h2 className="mb-4">Products</h2>
           </Col>
-{
+          <Col md={3}>
+            <h5>Filter</h5>
+          </Col>
+          <Col md={9}>
+            <Row>
+            {
   product.map((val)=>{
     return(
       <Col md={4} key={val.id}>
@@ -63,6 +68,9 @@ function Home() {
    
   })
 }
+            </Row>
+          </Col>
+
          
         </Row>
       </Container>
