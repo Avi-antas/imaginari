@@ -5,10 +5,14 @@ body {
   font-family: 'Mulish', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./images/app-bk.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'DM Serif Display', serif;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 p{
   color: #333;

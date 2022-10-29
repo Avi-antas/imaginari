@@ -1,19 +1,25 @@
 .header {
     display: flex;
-    padding: 0 15px;
+    padding: 0 0 0 15px;
     margin-bottom: 50px;
-    background: #ededed;
-
+    background: #287982;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     .logo {
-        -webkit-text-stroke: 1px;
+        h1{
+            color: #fff;
+            text-shadow: 1px 1px 2px #000000;
+        }
+        
     }
 
     .navbar {
-        width: 85%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 35px;
+        padding: 0px 0px 0px 35px;
     }
 
     .my-nav {
@@ -22,8 +28,50 @@
         text-decoration: none;
         font-size: 18px;
         font-weight: 500;
-        color: #ff0052;
+        color: #fff;
+        &.active{
+            color: #df661d;
+        }
+    }
+   
+    .nav-right{
+        padding: 16px 20px;
+        background: #df661d;
+        .site-icon{
+            color: #ffffff;         
+        }
+        p{
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+    .nav-left{
+        display: flex;
+        justify-content: space-between;
+        width: 88%;
+        .search{
+            display: flex;
+            position: relative;
+            width: 310px;
+            align-items: center;
+            button{
+                padding: 6px 11px;
+                background: #333;
+                color: #fff;
+                border: none;
+                .sar-icon{
+                    margin-right: 5px;
+                }
+            }
+            input{
+                border: none;
+                padding: 6px 15px;
+                &::placeholder{
+                    color: #ddd;
+                }
 
+            }
+        }
     }
 }
 
@@ -45,10 +93,7 @@
 .carousel-item{
     height: 100%;
 }
-.site-icon{
-    color: #ff0052;
-     
-}
+
 
 .my-slider{
     height: 400px;
