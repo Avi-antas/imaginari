@@ -1,12 +1,14 @@
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector} from 'react-redux'
 import React from 'react'
 import { faShoppingBag, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 
-import { Link, NavLink } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import './App.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Login from './Login'
 function Header(props) {
     const updatecart = useSelector((state) => state.counterReducer)
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <div className='header nav-sticky'>
             <div className='logo'>
@@ -25,7 +27,7 @@ function Header(props) {
                         <FontAwesomeIcon icon={faSearch} className="sar-icon" />
                         Search
                         </button>
-                        <p  className='login'> <FontAwesomeIcon icon={faUser} className="sar-icon" style={{martginRight:5}}/>Login</p>
+                        <p  className='login' onClick={() => setModalShow(true)}> <FontAwesomeIcon icon={faUser} className="sar-icon" style={{martginRight:5}}/>Login</p>
                     </div>
                 </div>
                 <div className='nav-right'>
@@ -34,6 +36,10 @@ function Header(props) {
                         <p><FontAwesomeIcon icon={faShoppingBag} className="site-icon" />&nbsp;My Cart: {updatecart}</p>
                     </div>
                 </div>
+                <Login 
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                />
             </div>
         </div>
     )
