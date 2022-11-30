@@ -3,7 +3,6 @@ import { faShoppingCart, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import Header from "./Header";
 import { addToCart } from "../actions/action";
 import { removeToCart } from "../actions/action";
 import Banner from "./Banner";
@@ -22,7 +21,6 @@ function Home() {
   return (
     <>
       
-      <Header />
       <Container>
       <Banner />
       </Container>

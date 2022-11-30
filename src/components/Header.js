@@ -1,24 +1,32 @@
 import { useSelector} from 'react-redux'
-import React from 'react'
+import React, {useState} from 'react'
 import { faShoppingBag, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 
-import {  NavLink } from 'react-router-dom'
+import {  NavLink, Link } from 'react-router-dom'
 import './App.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Login from './Login'
+import { Nav } from 'react-bootstrap'
 function Header(props) {
     const updatecart = useSelector((state) => state.counterReducer)
     const [modalShow, setModalShow] = React.useState(false);
+//    const navLinkStyle = ({isActive}) =>{
+//     return{
+//         fontWeight: isActive ? 'blod' : 'normal',
+//         color:  isActive ? 'red' : 'white'
+//     }
+//    }
     return (
         <div className='header nav-sticky'>
             <div className='logo'>
-                <h1>imaginari</h1>
+                <NavLink to="/home" style={{textDecoration:'none'}}><h1 >imaginari</h1></NavLink>
             </div>
             <div className='navbar'>
                 <div className='nav-left'>
                     <div className='nav-wrap'>
-                        <NavLink to="/" className='my-nav'>Home</NavLink>
-                        <NavLink to="/about" className='my-nav'>About</NavLink>
+                        <NavLink to="/home" className='my-nav' >Home</NavLink>
+                        <NavLink to="/about" className='my-nav' >About</NavLink>
+                        <NavLink to="/admin" className='my-nav' >Admin</NavLink>
                     </div>
 
                     <div className='search'>
