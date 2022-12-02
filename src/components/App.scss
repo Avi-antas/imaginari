@@ -118,3 +118,23 @@
         object-fit: cover;
     }
 }
+
+
+
+.each-filter{
+    border-radius: 10px;
+    background: #fff;
+    padding: 15px;
+    p{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    li{
+        list-style: none;
+        padding: 10px;
+        cursor: pointer;
+        &:not(:last-child){
+            border-bottom: 1px solid #eee;
+        }
+    }
+}

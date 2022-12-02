@@ -32,6 +32,19 @@ function Home() {
           </Col>
           <Col md={3}>
             <h5>Filter</h5>
+            <div className="each-filter">
+              <p>Product type</p>
+              <ul>
+              {
+              product.map((filter)=>{
+                return(
+                  <li>{filter.productName}</li>
+                )
+              })
+            }
+              </ul>
+            </div>
+            
           </Col>
           <Col md={9}>
             <Row>
