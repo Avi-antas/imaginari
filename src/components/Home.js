@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { faShoppingCart, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Accordion } from "react-bootstrap";
 import { addToCart } from "../actions/action";
 import { removeToCart } from "../actions/action";
 import Banner from "./Banner";
@@ -31,18 +31,31 @@ function Home() {
             <h2 className="mb-4">Products</h2>
           </Col>
           <Col md={3}>
-            <h5>Filter</h5>
+            
             <div className="each-filter">
-              <p>Product type</p>
+            <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Product type</Accordion.Header>
+        <Accordion.Body>
               <ul>
               {
               product.map((filter)=>{
                 return(
-                  <li>{filter.productName}</li>
+                  <li>
+                    
+        {filter.productName}
+      
+                    
+                    </li>
                 )
               })
             }
               </ul>
+             
+             
+             </Accordion.Body>
+       </Accordion.Item>
+       </Accordion>
             </div>
             
           </Col>
