@@ -97,6 +97,26 @@
 
 .each-pro {
     margin-bottom: 15px;
+    .self-count{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        input{
+            width: 100%;
+            text-align: center;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .action-btn{
+            display: block;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+    }
 }
 
 .carousel{
